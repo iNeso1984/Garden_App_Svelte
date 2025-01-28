@@ -138,6 +138,9 @@
 
 
 <style>
+h4{
+text-align:center;}
+
  .controls {
   display: flex;
   flex-wrap: wrap;
@@ -145,14 +148,16 @@
   margin-bottom: 20px;
   
 }
-  .control-section {
-    flex: 1;
-    min-width: 300px;
-    background: rgb(31, 31, 31);
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+.control-section {
+  flex: 0 0 auto; /* Prevent flex from growing */
+  max-width: 600px; 
+  min-width: 300px; 
+  background: rgb(31, 31, 31);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center horizontally */
+}
   .control-item {
     display: flex;
     flex-direction: column;
@@ -196,6 +201,7 @@
   .icon {
     width: 42px;
     height: 42px;
+    
     cursor: grab;
     border-radius: 4px;
     border: 1px solid #ccc;
